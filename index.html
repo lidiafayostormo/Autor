@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Georges Braque</title>
+    <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <style type="text/css">
+        :root{
+            --c:brown;
+            --altura:70vh;
+        }
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            height: var(--altura);
+            background: var(--c);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        header>div {
+            width: 50%;
+            height: 60vh;
+
+        }
+
+        .bloc_esq {
+            background: purple;
+        }
+
+        .bloc_esq img {
+            object-fit: cover;
+            object-position: top center;
+        }
+
+        .bloc_dre {
+            background: pink;
+        }
+
+        .bloc_dre img {
+            object-fit: cover;
+            object-position: top center;
+        }
+
+        h1 {
+            font-family: 'Abril Fatface', cursive;
+            position: absolute;
+            text-align: center;
+            top: 40vh;
+            height: 70vh;
+            width: 100%;
+            color: floralwhite;
+        }
+
+        h2 {
+            padding: 40px 0;
+            position: absolute;
+            text-align: center;
+            top: 40vh;
+            font-size: 3vw;
+            width: 100%;
+            color: floralwhite;
+
+        }
+
+        article {
+            font-family: 'Jomolhari', serif;
+            width: 33.4em;
+            margin: auto;
+
+        }
+
+        article>p:first-child {
+            padding: 8vw 0;
+            color: brown;
+            column-count: 2;
+            column-gap: 30px;
+            text-align: justify;
+            hyphens: auto;
+            line-height: 1.4em;
+            column-rule: 1px solid brown;
+        }
+
+        article #cos>p:first-child::first-letter {
+            color: brown;
+            font-family: 'Georgia', sans-serif;
+            font-size: 5em;
+            float: left;
+            margin-right: 0.2em;
+            margin-top: -0.35em;
+            margin-bottom: -0.4em;
+            padding-bottom: 0.1em;
+        }
+
+        article #cos {
+            text-align: justify;
+            hyphens: auto;
+            width: auto;
+            padding: 0 3em;
+        }
+
+        article #cos p {
+            padding: 0 0 1.5em 0;
+        }
+
+        .cercle,
+        .hexagon {
+            background: brown;
+
+        }
+
+        .cercle img,
+        .hexagon img {
+            mix-blend-mode: hard-light;
+        }
+
+        .cercle,
+        .cercle img {
+            border-radius: 50%;
+
+        }
+
+        .cercle {
+            max-width: 20em;
+            float: left;
+            margin-left: -6em;
+            shape-margin: 0em;
+            shape-outside: circle(50%)border-box;
+        }
+
+        .hexagon,
+        .hexagon img {
+            clip-path: polygon(80% 0, 100% 25%, 100% 87%, 50% 100%, 14% 59%, 30% 0);
+
+        }
+
+        .hexagon {
+            max-width: 20em;
+            float: right;
+            margin-right: -5em;
+            shape-margin: 0em;
+            shape-outside: clip-path: polygon(80% 0, 100% 25%, 100% 87%, 50% 100%, 14% 59%, 30% 0)border-box;
+        }
+        }
+
+        @media (max-width:37.5em) {
+            body {
+                background: azure;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="bloc_esq">
+            <img src="img/img3.jpg">
+        </div>
+        <div class="bloc_dre">
+            <img src="img/img2.jpg">
+        </div>
+        <h1> Georges Braque</h1>
+        <h2>Pintor y escultor francés</h2>
+    </header>
+    <article>
+
+        <p>Nació en una familia de artesanos. Georges Braque creció en Le Havre y estudió en la Escuela de Bellas Artes (École des Beaux-Arts) desde 1897 hasta 1899. Llegó a París en 1900. Allí estudió primero en la Academia Humbert, en la que conoció a Marie Laurencin y Francis Picabia, después, a partir de 1903, estudió en la Escuela de Bellas Artes.La exposición fauvista de 1905 le impresionó tanto que se adscribió a este estilo, usando preferentemente los colores rosa y violeta. Realizó en 1906 con Othon Friesz un viaje a Amberes y, durante el verano de 1907, a La Ciotat y a L'Estaque.</p>
+
+        <div id="cos">
+            <p> En otoño de ese mismo año, la exposición retrospectiva de Paul Cézanne y la amistad que trabó con Pablo Picasso, que acababa de pintar sus Señoritas de Aviñón, le hicieron cambiar de estilo. El trabajo de ambos, en estrecha relación, hará surgir y evolucionar al cubismo. En el verano de 1908 pinta paisajes en L'Estaque, en 1909, en Normandía y La Roche-Guyon.</p>
+            <div class="cercle">
+                <img src="img/img6.jpg" alt="retrat">
+            </div>
+            <p>Estudiando metódicamente las líneas de contorno utilizadas por Cézanne, Braque fue evolucionando progresivamente sus composiciones con ligeras interrupciones en las líneas. Tras 1908 comienza a romper con la visión clásica, utilizando cada vez más formas geométricas principalmente para naturalezas muertas. Asimismo introdujo textos en sus pinturas y creó el collage. Creó asimismo en 1912 las esculturas en papel, realizó al final de la guerra una obra esencialmente basada en la naturaleza muerta, abandonando paulatinamente sus composiciones geométricas.</p>
+
+            <div class="hexagon">
+                <img src="img/img1.jpg" alt="retrat">
+            </div>
+            <p>En 1930 se compra una casa en Varengeville-sur-Mer, cerca de Dieppe. La Primera Guerra Mundial le inspiró obras más serias y austeras. A partir de 1947, su trabajo se ve constantemente interrumpido por la enfermedad.</p>
+
+            <p>En 1961, se convierte en el primer pintor vivo cuya obra se exhibió en el Museo de Louvre al organizarse una retrospectiva de su trabajo en ese lugar.</p>
+
+            <p>Murió en París el 31 de agosto de 1963, a la edad de 81 años y actualmente hay un colegio en Nantes con su nombre.</p>
+        </div>
+    </article>
+
+</body></html>
